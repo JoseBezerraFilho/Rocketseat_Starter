@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome" />
+        <!-- <input type="text" name="nome" id="nome2"/> -->
+        <button class="botao">Adcionar</button> 
+    </div>
+
+    <script>
+        // var inputElement = document.getElementById('nome')
+        // var inputElement = document.getElementsByTagName('input')[0]
+        // var inputElement = document.getElementsByClassName('nome')[0]
+        //getElements.... no plural retorna um vetor
+        
+        // var inputElement = document.querySelector('div#app input') ou
+        // var inputElement = document.querySelector('input[name=nome]') 
+        var inputElement = document.querySelector('input[name=nome]')
+        var btnElement = document.querySelector('button.botao')
+        btnElement.onclick = function() {
+            var text = inputElement.value // recuperando o testo da variável inputElement
+            alert(text)
+        }
+        console.log(inputElement)
+        </script>
+</body>
+</html>

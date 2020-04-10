@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+            function retornaSexo(sexo) {
+                // M -> Masculino, F -> Feminino
+               /* if (sexo === 'M') {  
+                    return 'Masculino'
+                } else if ( sexo === 'F') {
+                    return 'Feminino'
+                } else {
+                    return 'Outros'
+                } */
+
+                switch (sexo) {
+                    case 'M':
+                        return 'Masculino'
+                    case 'F':
+                        return 'Feminino'
+                    default:                    
+                        return 'Outros'
+                }
+
+        } 
+        
+        // sexo === 'M' -> valida valor e tipo da variável
+        // Quando utilizamos (concatenamos) vários IF's em cima da mesma variável, utilizamos o SWITCH
+        // Default funciona como válvula de escape. Equivalente ao 'else'
+            
+            var resultado = retornaSexo('F')
+            console.log(resultado) 
+
+        
+        
+        </script>
+    </body>
+</html>
